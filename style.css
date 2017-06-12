@@ -1,0 +1,8 @@
+.jumbotron {
+	background-color: lightblue;
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+}
