@@ -56,7 +56,7 @@ $(document).ready(function(){
 
    $("button").on("click", function() {
       event.preventDefault();
-          $("gifs-appear-here").empty(); //clears the previous gifs   
+     
 
        var itemSelected = $(this).attr("data-name");
        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
@@ -71,7 +71,8 @@ $(document).ready(function(){
    
          var results = response.data; //store all the arrays in an array called results
          var topicSelected = $("<h3>").text(itemSelected);
-         $("#gifs-appear-here").append(topicSelected); //printing button Selected
+         $("#gifs-appear-here").empty(); //clears the previous gifs  
+         $("#gifs-appear-here").append(topicSelected); //printing heading for button Selected
          for (var i = 0; i < results.length; i++) {
             var gifDiv = $("<div class='item'>");
             var rating = results[i].rating;
