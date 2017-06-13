@@ -1,7 +1,8 @@
 $(document).ready(function(){
  
     var topics = ["rings", "flowers", "cars", "gardens", "castles", "wedding gowns"];
-   
+   // Calling the renderButtons function to display the intial buttons
+    renderButtons();   
     // Function for displaying the buttons
     function renderButtons() {
   
@@ -54,7 +55,7 @@ $(document).ready(function(){
    // Calling the renderButtons function to display the intial buttons
    renderButtons();
 
-   $("button").on("click", function() {
+   $(document).on("click", "button",function() {
       event.preventDefault();
      
 
@@ -92,9 +93,9 @@ $(document).ready(function(){
 
          // this is were we check the image state when the user clicks on the image
           $(".showImage").on("click", function() {
-              console.log ("inside image click function");
-              var state = $(this).attr("data-state");
-              console.log(this, "clicked image is " + state);
+
+              var state = $(this).attr("data-state"); // checking the state of the image
+
               if (state === "still") {
                   console.log ("image is still, change to animate");
                   $(this).attr("src", $(this).attr("data-animate"));
