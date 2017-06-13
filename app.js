@@ -109,8 +109,12 @@ $(document).ready(function(){
          
             }); //end gif onclick function to animate
 
-      }); // end of done function response
+  //    });
 
+      }) // end of done function response
+      .fail(function (err){
+          alert ("Server not responding");
+      }); //end of fail function response
     }); // end button on click function
 
 }); //end document ready
