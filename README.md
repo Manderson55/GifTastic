@@ -1,28 +1,10 @@
 # GifTastic
-# GifTastic
+
 
 ### Overview
 
-In this assignment, you'll use the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.
+This web site uses the GIPHY API to make a dynamic web page that populates with gifs of your choice. It uses the GIPHY API andit was developed with JavaScript and jQuery to change the HTML.
 
-![GIPHY](Images/1-giphy.jpg)
-
-### Before You Begin
-
-1. **Hit the GIPHY API**.
-   * Fool around with the GIPHY API. [Giphy API](https://github.com/Giphy).
-   * Be sure to read about these GIPHY parameters (hint, hint): 
-     * `q`
-     * `limit`
-     * `rating`
-   * Like many APIs, GIPHY requires developers to use a key to access their API data. For now, you can use their [public API key](https://github.com/Giphy/GiphyAPI#public-beta-key).
-   * Make sure you switch the protocol in the query URL from **`http to https`**, or the app may not work properly when deployed to Heroku.
-
-2. **[Watch the demo video](homework_demo.mov)**
-
-   * You should have a high-level understanding of how this assignment works before attempting to code it.
-
-### Instructions
 
 1. Before you can make any part of our site work, you need to create an array of strings, each one related to a topic that interests you. Save it to a variable called `topics`. 
    * We chose animals for our theme, but you can make a list to your own liking.
